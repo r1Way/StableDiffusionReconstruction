@@ -1,3 +1,11 @@
+'''
+这段代码会遍历指定区间的图片，
+每张图片都会提取其latent特征和文本条件特征，
+并保存为npy文件。
+
+主要用到了Stable Diffusion的编码器和条件编码器，
+采样器部分也可用于生成新图片（但这里只保存特征）。
+'''
 import argparse, os
 import PIL
 import torch
@@ -10,6 +18,12 @@ from contextlib import nullcontext
 from pytorch_lightning import seed_everything
 from nsd_access import NSDAccess
 from PIL import Image
+# modify river begin
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parent / 'D:\\project\\2025\\StableDiffusionReconstruction\\codes\\diffusion_sd1\\stable-diffusion'))
+# 记得将codes/diffusion_sd1/stable-diffusion添加到PYTHONPATH
+# modify river end
 from ldm.util import instantiate_from_config
 from ldm.models.diffusion.ddim import DDIMSampler
 
@@ -87,40 +101,51 @@ def main():
     # Load moodels
     precision = 'autocast'
     precision_scope = autocast if precision == "autocast" else nullcontext
-    model = load_model_from_config(config, f"{ckpt}", gpu)
+    model = load_model_from_config(config, f"{ckpt}", gpu)# 加载Stable Diffusion模型
     device = torch.device(f"cuda:{gpu}") if torch.cuda.is_available() else torch.device("cpu")
-    model = model.to(device)
-    sampler = DDIMSampler(model)
+    model = model.to(device) # 将模型移动到指定GPU
+    sampler = DDIMSampler(model) # 创建采样器
     sampler.make_schedule(ddim_num_steps=ddim_steps, ddim_eta=ddim_eta, verbose=False)
     assert 0. <= strength <= 1., 'can only work with strength in [0.0, 1.0]'
-    t_enc = int(strength * ddim_steps)
+    t_enc = int(strength * ddim_steps)# 计算编码步数
     print(f"target t_enc is {t_enc} steps")
 
     # Sample
+    # 遍历指定范围的图片索引
     for s in tqdm(range(imgidx[0],imgidx[1])):
         print(f"Now processing image {s:06}")
         prompt = []
+        # 读取该图片的COCO文本描述（caption）
         prompts = nsda.read_image_coco_info([s],info_type='captions')
         for p in prompts:
             prompt.append(p['caption'])    
         
+        # 读取图片数据
         img = nsda.read_images(s)
+        # 图片预处理：resize、归一化到[-1,1]、转为tensor
         init_image = load_img_from_arr(img,resolution).to(device)
+        # 扩展batch维度
         init_image = repeat(init_image, '1 ... -> b ...', b=batch_size)
+        # 编码图片到latent空间（特征空间）
         init_latent = model.get_first_stage_encoding(model.encode_first_stage(init_image))  # move to latent space
 
         with torch.no_grad():
-            with precision_scope("cuda"):
-                with model.ema_scope():
+            with precision_scope("cuda"):# 自动混合精度
+                with model.ema_scope():# 使用EMA权重
+                     # 无条件文本特征
                     uc = model.get_learned_conditioning(batch_size * [""])
+                    # 条件文本特征（对caption取均值）
                     c = model.get_learned_conditioning(prompt).mean(axis=0).unsqueeze(0)
 
                     # encode (scaled latent)
+                    # 对latent特征加噪声编码
                     z_enc = sampler.stochastic_encode(init_latent, torch.tensor([t_enc]*batch_size).to(device))
                     # decode it
+                    # 解码（可选，当前代码未保存samples）
                     samples = sampler.decode(z_enc, c, t_enc, unconditional_guidance_scale=scale,
                                             unconditional_conditioning=uc,)
-                    
+        
+        # 保存latent特征和文本条件特征到本地npy文件            
         init_latent = init_latent.cpu().detach().numpy().flatten()
         c = c.cpu().detach().numpy().flatten()
         np.save(f'../../nsdfeat/init_latent/{s:06}.npy',init_latent)

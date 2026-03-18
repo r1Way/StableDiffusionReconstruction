@@ -1,0 +1,650 @@
+(BrainGNN) PS D:\project\2025\StableDiffusionReconstruction\codes\utils> python run_ridge2_place.py
+开始运行: V1
+设置随机种子: 42
+Loading fMRI data...
+Loading target features...
+Processing data for... subj01: ['V1'], init_latent
+X (24980, 4308), Y (24980, 6400), X_te (982, 4308), Y_te (982, 6400)
+Estimated memory usage: 0.60 GB
+将分 7 个批次处理，每批次最多 1000 个特征
+
+处理批次 1/7: 特征 0 到 999
+批次 0 模型已保存到: ../../decoded/subj01//subj01_V1_pipeline_init_latent_batch_0.joblib
+
+处理批次 2/7: 特征 1000 到 1999
+批次 1 模型已保存到: ../../decoded/subj01//subj01_V1_pipeline_init_latent_batch_1.joblib
+
+处理批次 3/7: 特征 2000 到 2999
+批次 2 模型已保存到: ../../decoded/subj01//subj01_V1_pipeline_init_latent_batch_2.joblib
+
+处理批次 4/7: 特征 3000 到 3999
+批次 3 模型已保存到: ../../decoded/subj01//subj01_V1_pipeline_init_latent_batch_3.joblib
+
+处理批次 5/7: 特征 4000 到 4999
+批次 4 模型已保存到: ../../decoded/subj01//subj01_V1_pipeline_init_latent_batch_4.joblib
+
+处理批次 6/7: 特征 5000 到 5999
+批次 5 模型已保存到: ../../decoded/subj01//subj01_V1_pipeline_init_latent_batch_5.joblib
+
+处理批次 7/7: 特征 6000 到 6399
+批次 6 模型已保存到: ../../decoded/subj01//subj01_V1_pipeline_init_latent_batch_6.joblib
+
+成功训练了 7 个批次模型
+开始预测...
+预测批次 1/7
+批次 0 预测准确率: 0.157
+预测批次 2/7
+批次 1 预测准确率: 0.134
+预测批次 3/7
+批次 2 预测准确率: 0.129
+预测批次 4/7
+批次 3 预测准确率: 0.163
+预测批次 5/7
+批次 4 预测准确率: 0.165
+预测批次 6/7
+批次 5 预测准确率: 0.127
+预测批次 7/7
+批次 6 预测准确率: 0.065
+总体预测准确率: 0.210
+预测结果已保存到: ../../decoded/subj01/
+程序执行完成，内存已清理
+开始运行: V2
+设置随机种子: 42
+Loading fMRI data...
+Loading target features...
+Processing data for... subj01: ['V2'], init_latent
+X (24980, 2916), Y (24980, 6400), X_te (982, 2916), Y_te (982, 6400)
+Estimated memory usage: 0.60 GB
+将分 7 个批次处理，每批次最多 1000 个特征
+
+处理批次 1/7: 特征 0 到 999
+批次 0 模型已保存到: ../../decoded/subj01//subj01_V2_pipeline_init_latent_batch_0.joblib
+
+处理批次 2/7: 特征 1000 到 1999
+批次 1 模型已保存到: ../../decoded/subj01//subj01_V2_pipeline_init_latent_batch_1.joblib
+
+处理批次 3/7: 特征 2000 到 2999
+批次 2 模型已保存到: ../../decoded/subj01//subj01_V2_pipeline_init_latent_batch_2.joblib
+
+处理批次 4/7: 特征 3000 到 3999
+批次 3 模型已保存到: ../../decoded/subj01//subj01_V2_pipeline_init_latent_batch_3.joblib
+
+处理批次 5/7: 特征 4000 到 4999
+批次 4 模型已保存到: ../../decoded/subj01//subj01_V2_pipeline_init_latent_batch_4.joblib
+
+处理批次 6/7: 特征 5000 到 5999
+批次 5 模型已保存到: ../../decoded/subj01//subj01_V2_pipeline_init_latent_batch_5.joblib
+
+处理批次 7/7: 特征 6000 到 6399
+批次 6 模型已保存到: ../../decoded/subj01//subj01_V2_pipeline_init_latent_batch_6.joblib
+
+成功训练了 7 个批次模型
+开始预测...
+预测批次 1/7
+批次 0 预测准确率: 0.091
+预测批次 2/7
+批次 1 预测准确率: 0.091
+预测批次 3/7
+批次 2 预测准确率: 0.101
+预测批次 4/7
+批次 3 预测准确率: 0.159
+预测批次 5/7
+批次 4 预测准确率: 0.162
+预测批次 6/7
+批次 5 预测准确率: 0.088
+预测批次 7/7
+批次 6 预测准确率: 0.037
+总体预测准确率: 0.185
+预测结果已保存到: ../../decoded/subj01/
+程序执行完成，内存已清理
+开始运行: V3
+设置随机种子: 42
+Loading fMRI data...
+Loading target features...
+Processing data for... subj01: ['V3'], init_latent
+X (24980, 2096), Y (24980, 6400), X_te (982, 2096), Y_te (982, 6400)
+Estimated memory usage: 0.60 GB
+将分 7 个批次处理，每批次最多 1000 个特征
+
+处理批次 1/7: 特征 0 到 999
+批次 0 模型已保存到: ../../decoded/subj01//subj01_V3_pipeline_init_latent_batch_0.joblib
+
+处理批次 2/7: 特征 1000 到 1999
+批次 1 模型已保存到: ../../decoded/subj01//subj01_V3_pipeline_init_latent_batch_1.joblib
+
+处理批次 3/7: 特征 2000 到 2999
+批次 2 模型已保存到: ../../decoded/subj01//subj01_V3_pipeline_init_latent_batch_2.joblib
+
+处理批次 4/7: 特征 3000 到 3999
+批次 3 模型已保存到: ../../decoded/subj01//subj01_V3_pipeline_init_latent_batch_3.joblib
+
+处理批次 5/7: 特征 4000 到 4999
+批次 4 模型已保存到: ../../decoded/subj01//subj01_V3_pipeline_init_latent_batch_4.joblib
+
+处理批次 6/7: 特征 5000 到 5999
+批次 5 模型已保存到: ../../decoded/subj01//subj01_V3_pipeline_init_latent_batch_5.joblib
+
+处理批次 7/7: 特征 6000 到 6399
+批次 6 模型已保存到: ../../decoded/subj01//subj01_V3_pipeline_init_latent_batch_6.joblib
+
+成功训练了 7 个批次模型
+开始预测...
+预测批次 1/7
+批次 0 预测准确率: 0.079
+预测批次 2/7
+批次 1 预测准确率: 0.081
+预测批次 3/7
+批次 2 预测准确率: 0.097
+预测批次 4/7
+批次 3 预测准确率: 0.137
+预测批次 5/7
+批次 4 预测准确率: 0.157
+预测批次 6/7
+批次 5 预测准确率: 0.083
+预测批次 7/7
+批次 6 预测准确率: 0.029
+总体预测准确率: 0.178
+预测结果已保存到: ../../decoded/subj01/
+程序执行完成，内存已清理
+开始运行: V4
+设置随机种子: 42
+Loading fMRI data...
+Loading target features...
+Processing data for... subj01: ['V4'], init_latent
+X (24980, 1311), Y (24980, 6400), X_te (982, 1311), Y_te (982, 6400)
+Estimated memory usage: 0.60 GB
+将分 7 个批次处理，每批次最多 1000 个特征
+
+处理批次 1/7: 特征 0 到 999
+批次 0 模型已保存到: ../../decoded/subj01//subj01_V4_pipeline_init_latent_batch_0.joblib
+
+处理批次 2/7: 特征 1000 到 1999
+批次 1 模型已保存到: ../../decoded/subj01//subj01_V4_pipeline_init_latent_batch_1.joblib
+
+处理批次 3/7: 特征 2000 到 2999
+批次 2 模型已保存到: ../../decoded/subj01//subj01_V4_pipeline_init_latent_batch_2.joblib
+
+处理批次 4/7: 特征 3000 到 3999
+批次 3 模型已保存到: ../../decoded/subj01//subj01_V4_pipeline_init_latent_batch_3.joblib
+
+处理批次 5/7: 特征 4000 到 4999
+批次 4 模型已保存到: ../../decoded/subj01//subj01_V4_pipeline_init_latent_batch_4.joblib
+
+处理批次 6/7: 特征 5000 到 5999
+批次 5 模型已保存到: ../../decoded/subj01//subj01_V4_pipeline_init_latent_batch_5.joblib
+
+处理批次 7/7: 特征 6000 到 6399
+批次 6 模型已保存到: ../../decoded/subj01//subj01_V4_pipeline_init_latent_batch_6.joblib
+
+成功训练了 7 个批次模型
+开始预测...
+预测批次 1/7
+批次 0 预测准确率: 0.069
+预测批次 2/7
+批次 1 预测准确率: 0.068
+预测批次 3/7
+批次 2 预测准确率: 0.096
+预测批次 4/7
+批次 3 预测准确率: 0.134
+预测批次 5/7
+批次 4 预测准确率: 0.143
+预测批次 6/7
+批次 5 预测准确率: 0.075
+预测批次 7/7
+批次 6 预测准确率: 0.023
+总体预测准确率: 0.170
+预测结果已保存到: ../../decoded/subj01/
+程序执行完成，内存已清理
+开始运行: V5
+设置随机种子: 42
+Loading fMRI data...
+Traceback (most recent call last):
+  File "ridge2.py", line 342, in <module>
+    main()
+  File "ridge2.py", line 158, in main
+    cX = np.load(f'{mridir}/{subject}_{croi}_betas_tr.npy').astype("float32")
+  File "F:\Users\anaconda3\envs\BrainGNN\lib\site-packages\numpy\lib\npyio.py", line 405, in load
+    fid = stack.enter_context(open(os_fspath(file), "rb"))
+FileNotFoundError: [Errno 2] No such file or directory: '../../mrifeat/subj01//subj01_V5_betas_tr.npy'
+开始运行: V6
+设置随机种子: 42
+Loading fMRI data...
+Loading target features...
+Processing data for... subj01: ['V6'], init_latent
+X (24980, 394), Y (24980, 6400), X_te (982, 394), Y_te (982, 6400)
+Estimated memory usage: 0.60 GB
+将分 7 个批次处理，每批次最多 1000 个特征
+
+处理批次 1/7: 特征 0 到 999
+批次 0 模型已保存到: ../../decoded/subj01//subj01_V6_pipeline_init_latent_batch_0.joblib
+
+处理批次 2/7: 特征 1000 到 1999
+批次 1 模型已保存到: ../../decoded/subj01//subj01_V6_pipeline_init_latent_batch_1.joblib
+
+处理批次 3/7: 特征 2000 到 2999
+批次 2 模型已保存到: ../../decoded/subj01//subj01_V6_pipeline_init_latent_batch_2.joblib
+
+处理批次 4/7: 特征 3000 到 3999
+批次 3 模型已保存到: ../../decoded/subj01//subj01_V6_pipeline_init_latent_batch_3.joblib
+
+处理批次 5/7: 特征 4000 到 4999
+批次 4 模型已保存到: ../../decoded/subj01//subj01_V6_pipeline_init_latent_batch_4.joblib
+
+处理批次 6/7: 特征 5000 到 5999
+批次 5 模型已保存到: ../../decoded/subj01//subj01_V6_pipeline_init_latent_batch_5.joblib
+
+处理批次 7/7: 特征 6000 到 6399
+批次 6 模型已保存到: ../../decoded/subj01//subj01_V6_pipeline_init_latent_batch_6.joblib
+
+成功训练了 7 个批次模型
+开始预测...
+预测批次 1/7
+批次 0 预测准确率: 0.018
+预测批次 2/7
+批次 1 预测准确率: 0.016
+预测批次 3/7
+批次 2 预测准确率: 0.034
+预测批次 4/7
+批次 3 预测准确率: 0.043
+预测批次 5/7
+批次 4 预测准确率: 0.062
+预测批次 6/7
+批次 5 预测准确率: 0.020
+预测批次 7/7
+批次 6 预测准确率: 0.011
+总体预测准确率: 0.075
+预测结果已保存到: ../../decoded/subj01/
+程序执行完成，内存已清理
+开始运行: V7
+设置随机种子: 42
+Loading fMRI data...
+Loading target features...
+Processing data for... subj01: ['V7'], init_latent
+X (24980, 186), Y (24980, 6400), X_te (982, 186), Y_te (982, 6400)
+Estimated memory usage: 0.60 GB
+将分 7 个批次处理，每批次最多 1000 个特征
+
+处理批次 1/7: 特征 0 到 999
+批次 0 模型已保存到: ../../decoded/subj01//subj01_V7_pipeline_init_latent_batch_0.joblib
+
+处理批次 2/7: 特征 1000 到 1999
+批次 1 模型已保存到: ../../decoded/subj01//subj01_V7_pipeline_init_latent_batch_1.joblib
+
+处理批次 3/7: 特征 2000 到 2999
+批次 2 模型已保存到: ../../decoded/subj01//subj01_V7_pipeline_init_latent_batch_2.joblib
+
+处理批次 4/7: 特征 3000 到 3999
+批次 3 模型已保存到: ../../decoded/subj01//subj01_V7_pipeline_init_latent_batch_3.joblib
+
+处理批次 5/7: 特征 4000 到 4999
+批次 4 模型已保存到: ../../decoded/subj01//subj01_V7_pipeline_init_latent_batch_4.joblib
+
+处理批次 6/7: 特征 5000 到 5999
+批次 5 模型已保存到: ../../decoded/subj01//subj01_V7_pipeline_init_latent_batch_5.joblib
+
+处理批次 7/7: 特征 6000 到 6399
+批次 6 模型已保存到: ../../decoded/subj01//subj01_V7_pipeline_init_latent_batch_6.joblib
+
+成功训练了 7 个批次模型
+开始预测...
+预测批次 1/7
+批次 0 预测准确率: 0.022
+预测批次 2/7
+批次 1 预测准确率: 0.034
+预测批次 3/7
+批次 2 预测准确率: 0.041
+预测批次 4/7
+批次 3 预测准确率: 0.064
+预测批次 5/7
+批次 4 预测准确率: 0.077
+预测批次 6/7
+批次 5 预测准确率: 0.032
+预测批次 7/7
+批次 6 预测准确率: 0.013
+总体预测准确率: 0.091
+预测结果已保存到: ../../decoded/subj01/
+程序执行完成，内存已清理
+开始运行: V8
+设置随机种子: 42
+Loading fMRI data...
+Loading target features...
+Processing data for... subj01: ['V8'], init_latent
+X (24980, 330), Y (24980, 6400), X_te (982, 330), Y_te (982, 6400)
+Estimated memory usage: 0.60 GB
+将分 7 个批次处理，每批次最多 1000 个特征
+
+处理批次 1/7: 特征 0 到 999
+批次 0 模型已保存到: ../../decoded/subj01//subj01_V8_pipeline_init_latent_batch_0.joblib
+
+处理批次 2/7: 特征 1000 到 1999
+批次 1 模型已保存到: ../../decoded/subj01//subj01_V8_pipeline_init_latent_batch_1.joblib
+
+处理批次 3/7: 特征 2000 到 2999
+批次 2 模型已保存到: ../../decoded/subj01//subj01_V8_pipeline_init_latent_batch_2.joblib
+
+处理批次 4/7: 特征 3000 到 3999
+批次 3 模型已保存到: ../../decoded/subj01//subj01_V8_pipeline_init_latent_batch_3.joblib
+
+处理批次 5/7: 特征 4000 到 4999
+批次 4 模型已保存到: ../../decoded/subj01//subj01_V8_pipeline_init_latent_batch_4.joblib
+
+处理批次 6/7: 特征 5000 到 5999
+批次 5 模型已保存到: ../../decoded/subj01//subj01_V8_pipeline_init_latent_batch_5.joblib
+
+处理批次 7/7: 特征 6000 到 6399
+批次 6 模型已保存到: ../../decoded/subj01//subj01_V8_pipeline_init_latent_batch_6.joblib
+
+成功训练了 7 个批次模型
+开始预测...
+预测批次 1/7
+批次 0 预测准确率: 0.051
+预测批次 2/7
+批次 1 预测准确率: 0.065
+预测批次 3/7
+批次 2 预测准确率: 0.078
+预测批次 4/7
+批次 3 预测准确率: 0.120
+预测批次 5/7
+批次 4 预测准确率: 0.129
+预测批次 6/7
+批次 5 预测准确率: 0.060
+预测批次 7/7
+批次 6 预测准确率: 0.024
+总体预测准确率: 0.152
+预测结果已保存到: ../../decoded/subj01/
+程序执行完成，内存已清理
+开始运行: FFC
+设置随机种子: 42
+Loading fMRI data...
+Loading target features...
+Processing data for... subj01: ['FFC'], init_latent
+X (24980, 747), Y (24980, 6400), X_te (982, 747), Y_te (982, 6400)
+Estimated memory usage: 0.60 GB
+将分 7 个批次处理，每批次最多 1000 个特征
+
+处理批次 1/7: 特征 0 到 999
+批次 0 模型已保存到: ../../decoded/subj01//subj01_FFC_pipeline_init_latent_batch_0.joblib
+
+处理批次 2/7: 特征 1000 到 1999
+批次 1 模型已保存到: ../../decoded/subj01//subj01_FFC_pipeline_init_latent_batch_1.joblib
+
+处理批次 3/7: 特征 2000 到 2999
+批次 2 模型已保存到: ../../decoded/subj01//subj01_FFC_pipeline_init_latent_batch_2.joblib
+
+处理批次 4/7: 特征 3000 到 3999
+批次 3 模型已保存到: ../../decoded/subj01//subj01_FFC_pipeline_init_latent_batch_3.joblib
+
+处理批次 5/7: 特征 4000 到 4999
+批次 4 模型已保存到: ../../decoded/subj01//subj01_FFC_pipeline_init_latent_batch_4.joblib
+
+处理批次 6/7: 特征 5000 到 5999
+批次 5 模型已保存到: ../../decoded/subj01//subj01_FFC_pipeline_init_latent_batch_5.joblib
+
+处理批次 7/7: 特征 6000 到 6399
+批次 6 模型已保存到: ../../decoded/subj01//subj01_FFC_pipeline_init_latent_batch_6.joblib
+
+成功训练了 7 个批次模型
+开始预测...
+预测批次 1/7
+批次 0 预测准确率: 0.018
+预测批次 2/7
+批次 1 预测准确率: 0.048
+预测批次 3/7
+批次 2 预测准确率: 0.053
+预测批次 4/7
+批次 3 预测准确率: 0.069
+预测批次 5/7
+批次 4 预测准确率: 0.100
+预测批次 6/7
+批次 5 预测准确率: 0.036
+预测批次 7/7
+批次 6 预测准确率: 0.011
+总体预测准确率: 0.112
+预测结果已保存到: ../../decoded/subj01/
+程序执行完成，内存已清理
+开始运行: PIT
+设置随机种子: 42
+Loading fMRI data...
+Loading target features...
+Processing data for... subj01: ['PIT'], init_latent
+X (24980, 328), Y (24980, 6400), X_te (982, 328), Y_te (982, 6400)
+Estimated memory usage: 0.60 GB
+将分 7 个批次处理，每批次最多 1000 个特征
+
+处理批次 1/7: 特征 0 到 999
+批次 0 模型已保存到: ../../decoded/subj01//subj01_PIT_pipeline_init_latent_batch_0.joblib
+
+处理批次 2/7: 特征 1000 到 1999
+批次 1 模型已保存到: ../../decoded/subj01//subj01_PIT_pipeline_init_latent_batch_1.joblib
+
+处理批次 3/7: 特征 2000 到 2999
+批次 2 模型已保存到: ../../decoded/subj01//subj01_PIT_pipeline_init_latent_batch_2.joblib
+
+处理批次 4/7: 特征 3000 到 3999
+批次 3 模型已保存到: ../../decoded/subj01//subj01_PIT_pipeline_init_latent_batch_3.joblib
+
+处理批次 5/7: 特征 4000 到 4999
+批次 4 模型已保存到: ../../decoded/subj01//subj01_PIT_pipeline_init_latent_batch_4.joblib
+
+处理批次 6/7: 特征 5000 到 5999
+批次 5 模型已保存到: ../../decoded/subj01//subj01_PIT_pipeline_init_latent_batch_5.joblib
+
+处理批次 7/7: 特征 6000 到 6399
+批次 6 模型已保存到: ../../decoded/subj01//subj01_PIT_pipeline_init_latent_batch_6.joblib
+
+成功训练了 7 个批次模型
+开始预测...
+预测批次 1/7
+批次 0 预测准确率: 0.027
+预测批次 2/7
+批次 1 预测准确率: 0.026
+预测批次 3/7
+批次 2 预测准确率: 0.044
+预测批次 4/7
+批次 3 预测准确率: 0.056
+预测批次 5/7
+批次 4 预测准确率: 0.089
+预测批次 6/7
+批次 5 预测准确率: 0.026
+预测批次 7/7
+批次 6 预测准确率: 0.008
+总体预测准确率: 0.094
+预测结果已保存到: ../../decoded/subj01/
+程序执行完成，内存已清理
+开始运行: VMV1
+设置随机种子: 42
+Loading fMRI data...
+Loading target features...
+Processing data for... subj01: ['VMV1'], init_latent
+X (24980, 324), Y (24980, 6400), X_te (982, 324), Y_te (982, 6400)
+Estimated memory usage: 0.60 GB
+将分 7 个批次处理，每批次最多 1000 个特征
+
+处理批次 1/7: 特征 0 到 999
+批次 0 模型已保存到: ../../decoded/subj01//subj01_VMV1_pipeline_init_latent_batch_0.joblib
+
+处理批次 2/7: 特征 1000 到 1999
+批次 1 模型已保存到: ../../decoded/subj01//subj01_VMV1_pipeline_init_latent_batch_1.joblib
+
+处理批次 3/7: 特征 2000 到 2999
+批次 2 模型已保存到: ../../decoded/subj01//subj01_VMV1_pipeline_init_latent_batch_2.joblib
+
+处理批次 4/7: 特征 3000 到 3999
+批次 3 模型已保存到: ../../decoded/subj01//subj01_VMV1_pipeline_init_latent_batch_3.joblib
+
+处理批次 5/7: 特征 4000 到 4999
+批次 4 模型已保存到: ../../decoded/subj01//subj01_VMV1_pipeline_init_latent_batch_4.joblib
+
+处理批次 6/7: 特征 5000 到 5999
+批次 5 模型已保存到: ../../decoded/subj01//subj01_VMV1_pipeline_init_latent_batch_5.joblib
+
+处理批次 7/7: 特征 6000 到 6399
+批次 6 模型已保存到: ../../decoded/subj01//subj01_VMV1_pipeline_init_latent_batch_6.joblib
+
+成功训练了 7 个批次模型
+开始预测...
+预测批次 1/7
+批次 0 预测准确率: 0.028
+预测批次 2/7
+批次 1 预测准确率: 0.054
+预测批次 3/7
+批次 2 预测准确率: 0.048
+预测批次 4/7
+批次 3 预测准确率: 0.076
+预测批次 5/7
+批次 4 预测准确率: 0.113
+预测批次 6/7
+批次 5 预测准确率: 0.048
+预测批次 7/7
+批次 6 预测准确率: 0.013
+总体预测准确率: 0.123
+预测结果已保存到: ../../decoded/subj01/
+程序执行完成，内存已清理
+开始运行: VMV2
+设置随机种子: 42
+Loading fMRI data...
+Loading target features...
+Processing data for... subj01: ['VMV2'], init_latent
+X (24980, 245), Y (24980, 6400), X_te (982, 245), Y_te (982, 6400)
+Estimated memory usage: 0.60 GB
+将分 7 个批次处理，每批次最多 1000 个特征
+
+处理批次 1/7: 特征 0 到 999
+批次 0 模型已保存到: ../../decoded/subj01//subj01_VMV2_pipeline_init_latent_batch_0.joblib
+
+处理批次 2/7: 特征 1000 到 1999
+批次 1 模型已保存到: ../../decoded/subj01//subj01_VMV2_pipeline_init_latent_batch_1.joblib
+
+处理批次 3/7: 特征 2000 到 2999
+批次 2 模型已保存到: ../../decoded/subj01//subj01_VMV2_pipeline_init_latent_batch_2.joblib
+
+处理批次 4/7: 特征 3000 到 3999
+批次 3 模型已保存到: ../../decoded/subj01//subj01_VMV2_pipeline_init_latent_batch_3.joblib
+
+处理批次 5/7: 特征 4000 到 4999
+批次 4 模型已保存到: ../../decoded/subj01//subj01_VMV2_pipeline_init_latent_batch_4.joblib
+
+处理批次 6/7: 特征 5000 到 5999
+批次 5 模型已保存到: ../../decoded/subj01//subj01_VMV2_pipeline_init_latent_batch_5.joblib
+
+处理批次 7/7: 特征 6000 到 6399
+批次 6 模型已保存到: ../../decoded/subj01//subj01_VMV2_pipeline_init_latent_batch_6.joblib
+
+成功训练了 7 个批次模型
+开始预测...
+预测批次 1/7
+批次 0 预测准确率: 0.021
+预测批次 2/7
+批次 1 预测准确率: 0.058
+预测批次 3/7
+批次 2 预测准确率: 0.053
+预测批次 4/7
+批次 3 预测准确率: 0.084
+预测批次 5/7
+批次 4 预测准确率: 0.118
+预测批次 6/7
+批次 5 预测准确率: 0.039
+预测批次 7/7
+批次 6 预测准确率: 0.016
+总体预测准确率: 0.125
+预测结果已保存到: ../../decoded/subj01/
+程序执行完成，内存已清理
+开始运行: VMV3
+设置随机种子: 42
+Loading fMRI data...
+Loading target features...
+Processing data for... subj01: ['VMV3'], init_latent
+X (24980, 203), Y (24980, 6400), X_te (982, 203), Y_te (982, 6400)
+Estimated memory usage: 0.60 GB
+将分 7 个批次处理，每批次最多 1000 个特征
+
+处理批次 1/7: 特征 0 到 999
+批次 0 模型已保存到: ../../decoded/subj01//subj01_VMV3_pipeline_init_latent_batch_0.joblib
+
+处理批次 2/7: 特征 1000 到 1999
+批次 1 模型已保存到: ../../decoded/subj01//subj01_VMV3_pipeline_init_latent_batch_1.joblib
+
+处理批次 3/7: 特征 2000 到 2999
+批次 2 模型已保存到: ../../decoded/subj01//subj01_VMV3_pipeline_init_latent_batch_2.joblib
+
+处理批次 4/7: 特征 3000 到 3999
+批次 3 模型已保存到: ../../decoded/subj01//subj01_VMV3_pipeline_init_latent_batch_3.joblib
+
+处理批次 5/7: 特征 4000 到 4999
+批次 4 模型已保存到: ../../decoded/subj01//subj01_VMV3_pipeline_init_latent_batch_4.joblib
+
+处理批次 6/7: 特征 5000 到 5999
+批次 5 模型已保存到: ../../decoded/subj01//subj01_VMV3_pipeline_init_latent_batch_5.joblib
+
+处理批次 7/7: 特征 6000 到 6399
+批次 6 模型已保存到: ../../decoded/subj01//subj01_VMV3_pipeline_init_latent_batch_6.joblib
+
+成功训练了 7 个批次模型
+开始预测...
+预测批次 1/7
+批次 0 预测准确率: 0.022
+预测批次 2/7
+批次 1 预测准确率: 0.046
+预测批次 3/7
+批次 2 预测准确率: 0.049
+预测批次 4/7
+批次 3 预测准确率: 0.084
+预测批次 5/7
+批次 4 预测准确率: 0.095
+预测批次 6/7
+批次 5 预测准确率: 0.035
+预测批次 7/7
+批次 6 预测准确率: 0.014
+总体预测准确率: 0.120
+预测结果已保存到: ../../decoded/subj01/
+程序执行完成，内存已清理
+开始运行: VVC
+设置随机种子: 42
+Loading fMRI data...
+Loading target features...
+Processing data for... subj01: ['VVC'], init_latent
+X (24980, 482), Y (24980, 6400), X_te (982, 482), Y_te (982, 6400)
+Estimated memory usage: 0.60 GB
+将分 7 个批次处理，每批次最多 1000 个特征
+
+处理批次 1/7: 特征 0 到 999
+批次 0 模型已保存到: ../../decoded/subj01//subj01_VVC_pipeline_init_latent_batch_0.joblib
+
+处理批次 2/7: 特征 1000 到 1999
+批次 1 模型已保存到: ../../decoded/subj01//subj01_VVC_pipeline_init_latent_batch_1.joblib
+
+处理批次 3/7: 特征 2000 到 2999
+批次 2 模型已保存到: ../../decoded/subj01//subj01_VVC_pipeline_init_latent_batch_2.joblib
+
+处理批次 4/7: 特征 3000 到 3999
+批次 3 模型已保存到: ../../decoded/subj01//subj01_VVC_pipeline_init_latent_batch_3.joblib
+
+处理批次 5/7: 特征 4000 到 4999
+批次 4 模型已保存到: ../../decoded/subj01//subj01_VVC_pipeline_init_latent_batch_4.joblib
+
+处理批次 6/7: 特征 5000 到 5999
+批次 5 模型已保存到: ../../decoded/subj01//subj01_VVC_pipeline_init_latent_batch_5.joblib
+
+处理批次 7/7: 特征 6000 到 6399
+批次 6 模型已保存到: ../../decoded/subj01//subj01_VVC_pipeline_init_latent_batch_6.joblib
+
+成功训练了 7 个批次模型
+开始预测...
+预测批次 1/7
+批次 0 预测准确率: 0.023
+预测批次 2/7
+批次 1 预测准确率: 0.036
+预测批次 3/7
+批次 2 预测准确率: 0.035
+预测批次 4/7
+批次 3 预测准确率: 0.070
+预测批次 5/7
+批次 4 预测准确率: 0.093
+预测批次 6/7
+批次 5 预测准确率: 0.036
+预测批次 7/7
+批次 6 预测准确率: 0.013
+总体预测准确率: 0.104
+预测结果已保存到: ../../decoded/subj01/
+程序执行完成，内存已清理
+(BrainGNN) PS D:\project\2025\StableDiffusionReconstruction\codes\utils>
